@@ -18,7 +18,8 @@ class Song
     @artist = artist
   end
 
-  extend Memorable
+  extend Memorable::ClassMethods
+  include Memorable::InstanceMethods
   #def self.reset_all
     #@@songs.clear
   #end
